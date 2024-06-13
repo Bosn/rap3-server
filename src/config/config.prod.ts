@@ -5,7 +5,7 @@ const config: IConfigOptions = {
   version: '2.9.0',
   serve: {
     port: (process.env.SERVE_PORT && parseInt(process.env.SERVE_PORT, 10)) || 8080,
-    path: '',
+    path: '/api',
   },
   keys: ['some secret hurr'],
   session: {
