@@ -18,11 +18,12 @@ const config: IConfigOptions = {
     username: process.env.MYSQL_USERNAME || 'root',
     password: process.env.MYSQL_PASSWD || '',
     database: process.env.MYSQL_SCHEMA || 'RAP2_DELOS_APP',
+    timezone: '+08:00',
     pool: {
       max: 80,
       min: 0,
-      idle: 20000,
-      acquire: 20000,
+      idle: 10000,
+      acquire: 60000,
     },
     logging: false,
   },
@@ -48,5 +49,6 @@ const config: IConfigOptions = {
   },
   mailSender: process.env.MAIL_SENDER ?? 'rap2org@service.alibaba.com',
 }
+
 
 export default config

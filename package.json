@@ -13,7 +13,7 @@
     "dev": "cross-env NODE_ENV=development nodemon src/scripts/dev.ts",
     "dev-old": "tsc -w & cross-env NODE_ENV=development nodemon dist/scripts/dev.js",
     "local-start": "cross-env NODE_ENV=development node dist/scripts/dev.js",
-    "create-db": "cross-env NODE_ENV=development node dist/scripts/initSchema",
+    "create-db": "cross-env NODE_ENV=production node dist/scripts/initSchema",
     "start": "cross-env NODE_ENV=production pm2 start dist/dispatch.js --name=rap-server-delos",
     "lint": "echo \"ESLint checking...\" && eslint src/**/*.ts --fix",
     "start:redis": "pm2 start redis-server --name redis-server",
