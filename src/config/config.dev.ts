@@ -29,7 +29,10 @@ const config: IConfigOptions = {
       connectTimeout: 20000,
     },
   },
-  redis: {},
+  redis: {
+    host: process.env.REDIS_HOST ?? 'localhost',
+    password: process.env.REDIS_PASSWORD ?? '',
+  },
   queueRedis: {
     host: process.env.QUEUE_REDIS_URL || 'localhost',
     port: (process.env.QUEUE_REDIS_PORT && parseInt(process.env.REDIS_PORT, 10)) || 6379,

@@ -1,4 +1,5 @@
 import { IConfigOptions } from '../types'
+require('dotenv').config()
 
 // local or development or production
 const configObj: IConfigOptions =
