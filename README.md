@@ -1,177 +1,170 @@
 # RAP3 - Server 
 
-### Intro 介绍
+### Introduction
+
+RAP3 is a popular open-source interface management platform. With its powerful GUI tools, it enables front-end and back-end developers to quickly agree on interface formats. It automatically generates structured interface documentation, mock services, and strongly-typed TypeScript interface definitions, thereby enhancing development efficiency and experience.
 
 RAP3 is a new project based on [RAP1](https://github.com/thx/RAP) & [RAP2](https://github.com/thx/rap2-delos). It has two components:
-RAP是在RAP1 & RAP2基础上重做的新项目，它包含两个组件(对应两个Github Repository)。
 
 * rap3-server: back-end data API server based on Koa + MySQL [link](https://github.com/bosn/rap3-client)
 * rap3-client: front-end static build based on React [link](https://github.com/bosn/rap3-server)
 
-* rap3-server:使用Koa + MySQL的后端API服务器 [link](https://github.com/bosn/rap3-client)
-* rap3-client: React前端App [link](https://github.com/bosn/rap3-server)
 
-### Support 客户支持
+## Recommend using Docker to deploy within minutes
 
-WIP，可以先issues里提单子
+### Install Docker
 
+Domestic users can refer to https://get.daocloud.io/ for installing Docker and Docker Compose (Linux users need to install separately). It is recommended to follow the instructions in the link to configure Docker Hub's domestic mirror to improve loading speed.
 
-## 推荐使用 Docker 快速部署
+### Configuration
 
-### 安装 Docker
+Create a directory named rap anywhere you like.
 
-国内用户可参考 [https://get.daocloud.io/](https://get.daocloud.io/) 安装 Docker 以及 Docker Compose (Linux 用户需要单独安装)，建议按照链接指引配置 Docker Hub 的国内镜像提高加载速度。
+Download the [docker-compose.yml](https://github.com/bosn/rap3-server/master/docker-compose.yml) file from this repository and place it in the rap directory.
 
-### 配置项目
+The default port number for the Rap frontend service is 3800, but you can customize it in the docker-compose.yml file as per the comments.
 
-在任意地方建立目录 rap
-
-把本仓库中的 [docker-compose.yml](https://github.com/bosn/rap3-server/master/docker-compose.yml) 放到 rap 目录中
-
-Rap 前端服务的端口号默认为 3800，你可以在 docker-compose.yml 中按照注释自定义
-
-在 rap 目录下执行下面的命令：
+Run the following command in the rap directory:
 
 ```sh
-# 拉取镜像并启动
+# pull the latest images and startup
 docker-compose up -d
 
-# 启动后，第一次运行需要手动初始化mysql数据库
-# ⚠️注意: 只有第一次该这样做
+# After starting, you need to manually initialize the MySQL database for the first run.
+# ⚠Note: This step is only required the first time.
 docker-compose exec rapserver node scripts/initSchema.js force
 
-# 部署成功后 访问
-http://localhost:3800 # 前端（可自定义端口号）
-http://localhost:38080 # 后端
+# After initialization, you can access the following URLs in your browser:
+http://localhost:3800 # Front-end
+http://localhost:38080 # Back-end
 
-# 如果访问不了可能是数据库没有链接上，关闭 rap 服务
+# If access is not possible, it might be because the database is not connected. Shut down the rap service.
 docker-compose down
-# 再重新运行
+# Restart the service
 docker-compose up -d
-# 如果 Sequelize 报错可能是数据库表发生了变化，运行下面命令同步
+# If Sequelize reports an error, it might be due to changes in the database schema. Run the following command to synchronize
 docker-compose exec rapserver node scripts/updateSchema
 ```
 
-**⚠️注意：第一次运行后 rap 目录下会被自动创建一个 docker 目录，里面存有 rap 的数据库数据，可千万不要删除。**
+⚠️ Note: After the first run, a docker directory will be automatically created in the rap directory. This directory contains the database data for rap, so make sure not to delete it.
 
-### 镜像升级
+### Image update
 
-Rap 经常会进行 bugfix 和功能升级，用 Docker 可以很方便地跟随主项目升级
+RAP is frequently updated with bug fixes and feature upgrades. Using Docker makes it easy to keep up with the main project's updates.
 
 ```sh
-# 拉取一下最新的镜像
+# Pull the latest images
 docker-compose pull
-# 暂停当前应用
+# Stop the current application
 docker-compose down
-# 重新构建并启动
+# Rebuild and start
 docker-compose up -d --build
-# 有时表结构会发生变化，执行下面命令同步
+# Sometimes the table structure changes, execute the following command to synchronize
 docker-compose exec delos node scripts/updateSchema
-# 清空不被使用的虚悬镜像
+# Clear unused images
 docker image prune -f
 ```
 
-## 手动部署
+## Manual Deployment
 
-### 环境要求
+### Environment Requirements
 
 - Node.js 16.0+
 - MySQL 5.7+
 - Redis 4.0+
-- pandoc 2.73 (供文档生成使用)
+- pandoc 2.73 (For generating offline documentation)
 
-### 开发模式
+### Development Mode
 
-#### 安装 MySQL 和 Redis 服务器
+#### Install MySQL and Redis servers
 
-请自行查找搭建方法，mysql/redis 配置在 config.\*.ts 文件中，在不修改任何配置的情况下，
-redis 会通过默认端口 + 本机即可正常访问，确保 redis-server 打开即可。
+Please refer to the setup guide for detailed instructions. The configurations for MySQL and Redis can be found in the config.*.ts files. Without modifying any settings, Redis can be accessed using the default port on the local machine. Just ensure that redis-server is running.
 
-注意：修改 cofig 文件后需要重新 `npm run build` 才能生效
+Note: After modifying the config files, you need to run npm run build again for the changes to take effect.
 
-#### 安装 pandoc
 
-我们使用 pandoc 来生成 Rap 的离线文档，安装 Pandoc 最通用的办法是在 pandoc 的 [release 页面](https://github.com/jgm/pandoc/releases/tag/2.7.3)下载对应平台的二进制文件安装即可。
+#### Install pandoc
 
-其中 linux 版本最好放在`/usr/local/bin/pandoc` 让终端能直接找到，并执行 `chmod +x /usr/local/bin/pandoc` 给调用权限。
+We use Pandoc to generate offline documentation for Rap. The most common way to install Pandoc is to download the binary file for your platform from the Pandoc [release page](https://github.com/jgm/pandoc/releases/tag/2.7.3) and install it.
 
-测试在命令行执行命令 `pandoc -h` 有响应即可。
+For the Linux version, it is best to place it in `/usr/local/bin/pandoc` so that it can be found and run directly from the terminal. Then, give it execute permissions by running `chmod +x /usr/local/bin/pandoc`.
 
-#### 启动redis-server
+You can test the installation by running the command `pandoc -h` in the terminal; if there is a response, the installation is successful.
+
+#### Start redis-server
 
 ```sh
 redis-server
 ```
 
-后台执行可以使用 nohup 或 pm2，这里推荐使用 pm2，下面命令会安装 pm2，并通过 pm2 来启动 redis 缓存服务
+You can use `nohup` or `pm2` to run processes in the background. We recommend using `pm2`. The following commands will install `pm2` and start the Redis cache service using `pm2`
+
 
 ```bash
 npm install -g pm2
 npm run start:redis
 ```
 
-#### 先创建创建数据库
+#### First, create the database.
 
 ```bash
 mysql -e 'CREATE DATABASE IF NOT EXISTS RAP2_DELOS_APP DEFAULT CHARSET utf8 COLLATE utf8_general_ci'
 ```
 
-#### 初始化
+#### Install dependencies
 
 ```bash
 npm install
 ```
 
-confirm configurations in /config/config.dev.js (used in development mode)，确认/config/config.dev.js 中的配置(.dev.js 后缀表示用于开发模式)。
+confirm configurations in /config/config.dev.js (used in development mode)
 
-#### 安装 && TypeScript 编译
+#### Install && TypeScript compile
 
 ```bash
 npm install -g typescript
 npm run build
 ```
 
-#### 初始化数据库表
+#### Initialize the database tables
 
 ```bash
 npm run create-db
 ```
 
-#### 执行 mocha 测试用例和 js 代码规范检查
+#### Run mocha test cases and js code style check
 
 ```bash
 npm run check
 ```
 
-#### 启动开发模式的服务器 监视并在发生代码变更时自动重启
+#### Start the development server and watch for changes to automatically restart when code changes
+
 ```bash
 npm run dev
 ```
 
-### 生产模式
+### Production Mode
 
 ```sh
-# 1. 修改/config/config.prod.js中的服务器配置
-# 2. 启动生产模式服务器
+# 1. Modify the server configuration in /config/config.prod.js
+# 2. Start the production server
 npm start
 
 ```
 
-## 社区贡献
+## Community contributions
 
-- [rap2-javabean 自动从 Rap 接口生成 Java Bean](https://github.com/IndiraFinish/rap2-javabean)
-- [rap2-generator 把 Java Bean 生成到 Rap](https://github.com/kings1990/rap2-generator)
+- [rap2-javabean Rap to Java Bean](https://github.com/IndiraFinish/rap2-javabean)
+- [rap2-generator Java Bean to Rap](https://github.com/kings1990/rap2-generator)
 
-## Author 作者
+## Author
 
 * Owner: Bosn Ma
 * Contributers: [link](https://github.com/bosn/rap3-server/graphs/contributors)
 
-* 所有人: Bosn Ma
-* 贡献者: [link](https://github.com/bosn/rap3-server/graphs/contributors)
 
-
-### Tech Arch 技术栈
+### Tech Arch
 
 * Front-end (rap-client)
     * React / Redux / Saga / Router
@@ -182,5 +175,4 @@ npm start
     * Koa
     * Sequelize
     * MySQL
-    * Server
-    * server: node
+    * Node.js
