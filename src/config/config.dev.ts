@@ -11,8 +11,6 @@ const config: IConfigOptions = {
     key: 'rap2:sess',
   },
   db: {
-    // dialect: 'mysql',
-    // host: process.env.MYSQL_URL || 'tddl.daily2.alibaba.net',
     dialect: 'mysql',
     host: process.env.MYSQL_URL ?? 'localhost',
     port: (process.env.MYSQL_PORT && parseInt(process.env.MYSQL_PORT, 10)) || 3306,
@@ -30,13 +28,13 @@ const config: IConfigOptions = {
     },
   },
   redis: {
-    host: process.env.REDIS_HOST ?? 'localhost',
+    host: process.env.REDIS_URL ?? 'localhost',
     password: process.env.REDIS_PASSWORD ?? '',
   },
   queueRedis: {
     host: process.env.QUEUE_REDIS_URL || 'localhost',
     port: (process.env.QUEUE_REDIS_PORT && parseInt(process.env.REDIS_PORT, 10)) || 6379,
-    password: process.env.QUEUE_REDIS_PWD || undefined,
+    password: process.env.QUEUE_REDIS_PASS || undefined,
     maxRetriesPerRequest: null,
   },
   mail: {
