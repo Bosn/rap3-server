@@ -1,2 +1,0 @@
-ALTER TABLE `interfaces`
-  ADD COLUMN `isTmpl` BOOLEAN DEFAULT 0;
