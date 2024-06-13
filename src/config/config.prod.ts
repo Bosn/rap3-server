@@ -17,7 +17,7 @@ const config: IConfigOptions = {
     port: (process.env.MYSQL_PORT && parseInt(process.env.MYSQL_PORT, 10)) || 3306,
     username: process.env.MYSQL_USERNAME || 'root',
     password: process.env.MYSQL_PASSWD || '',
-    database: process.env.MYSQL_SCHEMA || 'rap',
+    database: process.env.MYSQL_SCHEMA || 'RAP2_DELOS_APP',
     pool: {
       max: 80,
       min: 0,
@@ -27,9 +27,9 @@ const config: IConfigOptions = {
     logging: false,
   },
   redis: {
-    host: process.env.REDIS_URL || 'localhost',
+    host: process.env.REDIS_URL ?? 'localhost',
     port: (process.env.REDIS_PORT && parseInt(process.env.REDIS_PORT, 10)) || 6379,
-    password: process.env.REDIS_PWD || undefined,
+    password: process.env.REDIS_PWD ?? '',
   },
   queueRedis: {
     host: process.env.QUEUE_REDIS_URL || 'localhost',

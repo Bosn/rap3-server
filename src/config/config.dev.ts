@@ -29,12 +29,13 @@ const config: IConfigOptions = {
   },
   redis: {
     host: process.env.REDIS_URL ?? 'localhost',
-    password: process.env.REDIS_PASSWORD ?? '',
+    port: (process.env.REDIS_PORT && parseInt(process.env.REDIS_PORT, 10)) || 6379,
+    password: process.env.REDIS_PWD ?? '',
   },
   queueRedis: {
     host: process.env.QUEUE_REDIS_URL || 'localhost',
     port: (process.env.QUEUE_REDIS_PORT && parseInt(process.env.REDIS_PORT, 10)) || 6379,
-    password: process.env.QUEUE_REDIS_PASS || undefined,
+    password: process.env.QUEUE_REDIS_PWD || undefined,
     maxRetriesPerRequest: null,
   },
   mail: {
