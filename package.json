@@ -6,16 +6,6 @@
   "homepage": "https://bosn.github.io/rap3-client/",
   "scripts": {
     "prepare": "dumi setup",
-    "build-css": "node ./node_modules/sass/sass src/:src/ --quiet",
-    "watch-css": "npm run build-css && node ./node_modules/sass/sass src/:src/ --watch",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js --max-old-space-size=4096",
-    "build": "npm run build-css && react-scripts build",
-    "test-backup": "react-scripts test --env=jsdom",
-    "test": "tsc && npm run lint",
-    "lint": "echo \"lint checking...\" && eslint . --ext .ts,.tsx && echo \"tsc checking...\"",
-    "eject": "react-scripts eject",
-    "build-docker": "docker build --rm -f \"Dockerfile\" -t rapteam/rap2-dolores:latest .",
     "docs:dev": "dumi dev",
     "docs:build": "dumi build && cp public/CNAME docs-dist/",
     "docs:deploy": "gh-pages -d docs-dist"
