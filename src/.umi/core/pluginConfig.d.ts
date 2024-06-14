@@ -95,6 +95,7 @@ host?: string
 https?: ({
 key?: string
 cert?: string
+http2?: boolean
 [k: string]: any
 } | boolean)
 headers?: {

@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType, dynamic } from '/Users/xian.xia/Documents/github/rap-client-github/node_modules/umi/node_modules/@umijs/runtime';
+import { ApplyPluginsType, dynamic } from '/Users/bosn/git/rap3-gh-pages/node_modules/.pnpm/@umijs+runtime@3.5.41_react@16.14.0/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -13,7 +13,7 @@ export function getRoutes() {
     "component": ((props) => dynamic({
           loader: async () => {
             const React = await import('react');
-            const { default: getDemoRenderArgs } = await import(/* webpackChunkName: 'dumi_demos' */ '/Users/xian.xia/Documents/github/rap-client-github/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+            const { default: getDemoRenderArgs } = await import(/* webpackChunkName: 'dumi_demos' */ '/Users/bosn/git/rap3-gh-pages/node_modules/.pnpm/@umijs+preset-dumi@1.1.54_react-dom@17.0.2_react@17.0.2__react-router@5.2.1_react@17.0.2__rea_qvl6zyifan3dcdybm5k33665ha/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
             const { default: Previewer } = await import(/* webpackChunkName: 'dumi_demos' */ 'dumi-theme-default/es/builtins/Previewer.js');
             const { usePrefersColor, context } = await import(/* webpackChunkName: 'dumi_demos' */ 'dumi/theme');
 
@@ -60,15 +60,15 @@ export function getRoutes() {
     "__dumiRoot": true,
     "layout": false,
     "path": "/",
-    "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'../dumi/layout')}), dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'/Users/xian.xia/Documents/github/rap-client-github/node_modules/dumi-theme-default/es/layout.js')})],
+    "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'../dumi/layout')}), dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'/Users/bosn/git/rap3-gh-pages/node_modules/.pnpm/dumi-theme-default@1.1.24_@umijs+preset-dumi@1.1.54_react-dom@17.0.2_react@17.0.2__react-rout_n5bqi5jubqov2fg3km6twommle/node_modules/dumi-theme-default/es/layout.js')})],
     "routes": [
       {
         "path": "/",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__index.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/index.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__index.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/index.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/index.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "hero": {
             "title": "RAP",
             "desc": "<div class=\"markdown\"><p>An automation、visualization and documentation API management platform</p></div>",
@@ -111,11 +111,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__index.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/index.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__index.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/index.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/index.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "hero": {
             "title": "RAP",
             "desc": "<div class=\"markdown\"><p>自动化、可视化、文档化的API管理平台</p></div>",
@@ -158,11 +158,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/dto",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__dto.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/dto.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__dto.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/dto.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/dto.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -195,11 +195,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/http",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__http.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/http.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__http.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/http.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/http.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -288,11 +288,11 @@ export function getRoutes() {
       },
       {
         "path": "/code",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__index.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/index.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__index.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/index.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/index.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -315,11 +315,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/migration",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__migration.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/migration.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__migration.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/migration.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/migration.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -352,11 +352,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/ts",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__ts.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/ts.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__ts.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/ts.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/ts.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -394,11 +394,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/react",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__index.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/index.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__index.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/index.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/index.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -456,11 +456,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/react/react-query",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/react-query.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/react-query.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/react-query.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -528,11 +528,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/react/react-query3",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query3.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/react-query3.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query3.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/react-query3.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/react-query3.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -599,11 +599,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/react/react-swr",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-swr.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/react-swr.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-swr.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/react-swr.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/react-swr.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -646,11 +646,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/react/redux-toolkit",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux-toolkit.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/redux-toolkit.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux-toolkit.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/redux-toolkit.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/redux-toolkit.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -672,11 +672,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/react/redux",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/redux.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/redux.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/redux.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -698,11 +698,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/vue",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__index.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/vue/index.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__index.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/vue/index.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/vue/index.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [],
           "nav": {
             "path": "/code",
@@ -718,11 +718,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/vue/vue-query",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-query.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/vue/vue-query.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-query.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/vue/vue-query.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/vue/vue-query.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -769,11 +769,11 @@ export function getRoutes() {
       },
       {
         "path": "/code/vue/vue-swr",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-swr.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/vue/vue-swr.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-swr.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/vue/vue-swr.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/vue/vue-swr.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -815,11 +815,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/export",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__export.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/export.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__export.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/export.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/export.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -848,11 +848,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/export",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__export.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/export.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__export.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/export.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/export.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -881,11 +881,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__index.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/index.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__index.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/index.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/index.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -934,11 +934,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__index.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/index.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__index.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/index.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/index.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -987,11 +987,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/qa",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__qa.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/qa.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__qa.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/qa.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/qa.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1040,11 +1040,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/qa",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__qa.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/qa.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__qa.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/qa.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/qa.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1093,11 +1093,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/start",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__start.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/start.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__start.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/start.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/start.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1126,11 +1126,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/start",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__start.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/start.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__start.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/start.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/start.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1159,11 +1159,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/import/protobuf",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__protobuf.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/protobuf.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__protobuf.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/protobuf.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/protobuf.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1186,11 +1186,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/import/protobuf",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__protobuf.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/protobuf.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__protobuf.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/protobuf.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/protobuf.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1213,11 +1213,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/import/rap",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__rap.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/rap.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__rap.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/rap.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/rap.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1250,11 +1250,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/import/rap",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__rap.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/rap.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__rap.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/rap.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/rap.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1287,11 +1287,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/import/swagger",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__swagger.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/swagger.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__swagger.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/swagger.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/swagger.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1314,11 +1314,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/import/swagger",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__swagger.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/swagger.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__swagger.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/swagger.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/swagger.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1341,11 +1341,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/import/yapi",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__yapi.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/yapi.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__yapi.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/yapi.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/yapi.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1368,11 +1368,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/import/yapi",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__yapi.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/import/yapi.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__import__yapi.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/import/yapi.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/import/yapi.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1395,11 +1395,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/interface/basic",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__basic.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/basic.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__basic.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/basic.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/basic.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1487,11 +1487,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/interface/basic",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__basic.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/basic.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__basic.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/basic.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/basic.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1579,11 +1579,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/interface/code",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__code.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/code.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__code.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/code.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/code.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1621,11 +1621,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/interface/code",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__code.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/code.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__code.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/code.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/code.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1663,11 +1663,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/interface/history",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__history.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/history.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__history.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/history.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/history.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1695,11 +1695,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/interface/history",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__history.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/history.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__history.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/history.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/history.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1727,11 +1727,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/interface/module",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__module.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/module.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__module.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/module.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/module.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1769,11 +1769,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/interface/module",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__module.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/module.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__module.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/module.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/module.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1811,11 +1811,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/interface/validation",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__validation.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/validation.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__validation.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/validation.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/validation.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1853,11 +1853,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/interface/validation",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__validation.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/interface/validation.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__interface__validation.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/interface/validation.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/interface/validation.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -1895,11 +1895,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/mock/basic",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__basic.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/mock/basic.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__basic.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/mock/basic.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/mock/basic.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1932,11 +1932,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/mock/basic",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__basic.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/mock/basic.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__basic.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/mock/basic.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/mock/basic.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -1969,11 +1969,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/mock/rule",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__rule.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/mock/rule.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__rule.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/mock/rule.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/mock/rule.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2001,11 +2001,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/mock/rule",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__rule.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/mock/rule.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__rule.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/mock/rule.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/mock/rule.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2033,11 +2033,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/mock/scene",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__scene.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/mock/scene.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__scene.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/mock/scene.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/mock/scene.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -2060,11 +2060,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/mock/scene",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__scene.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/mock/scene.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__mock__scene.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/mock/scene.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/mock/scene.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -2087,11 +2087,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/project/organization",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__organization.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/project/organization.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__organization.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/project/organization.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/project/organization.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -2144,11 +2144,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/project/organization",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__organization.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/project/organization.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__organization.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/project/organization.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/project/organization.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -2201,11 +2201,11 @@ export function getRoutes() {
       },
       {
         "path": "/guide/project/repository",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__repository.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/project/repository.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__repository.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/project/repository.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/project/repository.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -2253,11 +2253,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/guide/project/repository",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__repository.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/guide/project/repository.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__guide__project__repository.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/guide/project/repository.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/guide/project/repository.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 2,
@@ -2305,11 +2305,11 @@ export function getRoutes() {
       },
       {
         "path": "/open/data",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__data.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/data.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__data.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/data.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/data.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2348,11 +2348,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/open/data",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__data.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/data.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__data.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/data.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/data.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2391,11 +2391,11 @@ export function getRoutes() {
       },
       {
         "path": "/open/detail",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__detail.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/detail.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__detail.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/detail.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/detail.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2434,11 +2434,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/open/detail",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__detail.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/detail.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__detail.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/detail.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/detail.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2477,11 +2477,11 @@ export function getRoutes() {
       },
       {
         "path": "/open/interface",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__interface.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/interface.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__interface.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/interface.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/interface.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2520,11 +2520,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/open/interface",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__interface.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/interface.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__interface.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/interface.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/interface.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2563,11 +2563,11 @@ export function getRoutes() {
       },
       {
         "path": "/open/organizations",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__organizations.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/organizations.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__organizations.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/organizations.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/organizations.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2606,11 +2606,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/open/organizations",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__organizations.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/organizations.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__organizations.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/organizations.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/organizations.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2649,11 +2649,11 @@ export function getRoutes() {
       },
       {
         "path": "/open/repos",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__repos.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/repos.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__repos.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/repos.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/repos.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2692,11 +2692,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/open/repos",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__repos.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/repos.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__repos.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/repos.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/repos.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2735,11 +2735,11 @@ export function getRoutes() {
       },
       {
         "path": "/open/upload",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__upload.en-US.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/upload.en-US.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__upload.en-US.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/upload.en-US.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/upload.en-US.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2778,11 +2778,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/open/upload",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__upload.zh-CN.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/open/upload.zh-CN.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__open__upload.zh-CN.md' */'/Users/bosn/git/rap3-gh-pages/docs/open/upload.zh-CN.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/open/upload.zh-CN.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2821,11 +2821,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/dto",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__dto.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/dto.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__dto.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/dto.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/dto.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2859,11 +2859,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/http",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__http.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/http.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__http.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/http.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/http.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2953,11 +2953,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__index.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/index.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__index.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/index.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/index.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -2981,11 +2981,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/migration",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__migration.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/migration.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__migration.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/migration.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/migration.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3019,11 +3019,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/ts",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__ts.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/ts.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__ts.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/ts.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/ts.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3062,11 +3062,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/react",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__index.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/index.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__index.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/index.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/index.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3125,11 +3125,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/react/react-query",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/react-query.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/react-query.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/react-query.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3198,11 +3198,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/react/react-query3",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query3.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/react-query3.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-query3.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/react-query3.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/react-query3.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3270,11 +3270,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/react/react-swr",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-swr.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/react-swr.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__react-swr.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/react-swr.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/react-swr.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3318,11 +3318,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/react/redux-toolkit",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux-toolkit.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/redux-toolkit.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux-toolkit.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/redux-toolkit.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/redux-toolkit.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3345,11 +3345,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/react/redux",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/react/redux.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__react__redux.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/react/redux.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/react/redux.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3372,11 +3372,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/vue",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__index.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/vue/index.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__index.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/vue/index.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/vue/index.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [],
           "nav": {
             "path": "/zh-CN/code",
@@ -3393,11 +3393,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/vue/vue-query",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-query.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/vue/vue-query.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-query.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/vue/vue-query.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/vue/vue-query.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,
@@ -3445,11 +3445,11 @@ export function getRoutes() {
       },
       {
         "path": "/zh-CN/code/vue/vue-swr",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-swr.md' */'/Users/xian.xia/Documents/github/rap-client-github/docs/code/vue/vue-swr.md')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'docs__code__vue__vue-swr.md' */'/Users/bosn/git/rap3-gh-pages/docs/code/vue/vue-swr.md')}),
         "exact": true,
         "meta": {
           "filePath": "docs/code/vue/vue-swr.md",
-          "updatedTime": 1669200072000,
+          "updatedTime": 1718324895000,
           "slugs": [
             {
               "depth": 1,

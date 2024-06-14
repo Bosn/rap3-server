@@ -17,3 +17,6 @@ yarn-error.log*
 src/**/*.css
 build
 build.zip
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production

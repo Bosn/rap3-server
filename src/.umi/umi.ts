@@ -4,8 +4,8 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/xian.xia/Documents/github/rap-client-github/node_modules/umi/node_modules/@umijs/runtime';
-import { renderClient } from '/Users/xian.xia/Documents/github/rap-client-github/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from '/Users/bosn/git/rap3-gh-pages/node_modules/.pnpm/@umijs+runtime@3.5.41_react@16.14.0/node_modules/@umijs/runtime';
+import { renderClient } from '/Users/bosn/git/rap3-gh-pages/node_modules/.pnpm/@umijs+renderer-react@3.5.41_react-dom@16.14.0_react@16.14.0__react-router@5.2.0_react@16.14.0__react@16.14.0/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 
@@ -38,7 +38,7 @@ export default clientRender();
 
 
     window.g_umi = {
-      version: '3.5.35',
+      version: '3.5.41',
     };
   
 

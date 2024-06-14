@@ -1,10 +1,11 @@
 {
-  "name": "rap-client",
+  "name": "rap3-client",
   "version": "1.0.0",
   "description": "rap-client react app",
   "main": "app.js",
-  "homepage": "https://infra-fe.github.io/rap-client/",
+  "homepage": "https://bosn.github.io/rap3-client/",
   "scripts": {
+    "prepare": "dumi setup",
     "build-css": "node ./node_modules/sass/sass src/:src/ --quiet",
     "watch-css": "npm run build-css && node ./node_modules/sass/sass src/:src/ --watch",
     "start-js": "react-scripts start",
@@ -21,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:infra-fe/rap-client.git"
+    "url": "git@github.com:bosn/rap3-client.git"
   },
   "author": "Libby, Bosn",
   "license": "ISC",
@@ -123,7 +124,7 @@
     "ahooks": "^3.7.2",
     "antd": "^4.19.5",
     "babel-plugin-import": "^1.13.3",
-    "dumi": "^1.1.40",
+    "dumi": "^2.3.8",
     "gh-pages": "^4.0.0",
     "npm-run-all": "4.1.5",
     "pre-commit": "^1.2.2",

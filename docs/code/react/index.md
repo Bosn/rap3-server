@@ -2,7 +2,7 @@
 
 ## @rapper3/react-ahooks
 
-<code src="../demos/ReactHooks.tsx">
+<code src="../demos/ReactHooks.tsx"></code>
 
 ### 1. Click `Generate TS code`
 

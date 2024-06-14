@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory, History } from '/Users/xian.xia/Documents/github/rap-client-github/node_modules/umi/node_modules/@umijs/runtime';
+import { createBrowserHistory, History } from '/Users/bosn/git/rap3-gh-pages/node_modules/.pnpm/@umijs+runtime@3.5.41_react@16.14.0/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "rap-client"

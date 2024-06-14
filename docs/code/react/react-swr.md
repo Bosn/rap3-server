@@ -2,7 +2,7 @@
 
 `@rapper3/react-swr` based on [SWR](https://swr.vercel.app/zh-CN)
 
-<code src="../demos/ReactSwr.tsx">
+<code src="../demos/ReactSwr.tsx"></code>
 
 ### 1. Click `Generate TS code`
 

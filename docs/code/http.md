@@ -2,7 +2,7 @@
 
 ## @rapper3/request
 
-<code src="./demos/http.tsx">
+<code src="./demos/http.tsx"></code>
 
 ### 1. Click `Generate TS code`
 

@@ -66,16 +66,16 @@ export const op = createRapperQueryOptions(http)
 
 ### useRapperQuery
 
-<code src="../demos/reactQuery/ReactQuery.tsx">
+<code src="../demos/reactQuery/ReactQuery.tsx"></code>
 
 ### useRapperQueries
 
-<code src="../demos/reactQuery/ReactQueries.tsx">
+<code src="../demos/reactQuery/ReactQueries.tsx"></code>
 
 ### useRapperMutation
 
-<code src="../demos/reactQuery/useMutation.tsx">
+<code src="../demos/reactQuery/useMutation.tsx"></code>
 
 ### useRapperInfiniteQuery
 
-<code src="../demos/reactQuery/useInfiniteQuery.tsx">
+<code src="../demos/reactQuery/useInfiniteQuery.tsx"></code>

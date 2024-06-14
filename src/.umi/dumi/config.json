@@ -489,7 +489,7 @@
   "logo": "http://rap2.taobao.org/favicon.png",
   "mode": "site",
   "repository": {
-    "url": "https://github.com/infra-fe/rap-client",
+    "url": "https://github.com/bosn/rap3-client",
     "branch": "master"
   },
   "theme": {},
