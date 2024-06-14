@@ -20,3 +20,6 @@ build.zip
 .dumi/tmp
 .dumi/tmp-test
 .dumi/tmp-production
+
+# build
+docs-dist
