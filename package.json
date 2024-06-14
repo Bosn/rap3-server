@@ -17,7 +17,7 @@
     "eject": "react-scripts eject",
     "build-docker": "docker build --rm -f \"Dockerfile\" -t rapteam/rap2-dolores:latest .",
     "docs:dev": "dumi dev",
-    "docs:build": "dumi build",
+    "docs:build": "dumi build && cp public/CNAME docs-dist/",
     "docs:deploy": "gh-pages -d docs-dist"
   },
   "repository": {
