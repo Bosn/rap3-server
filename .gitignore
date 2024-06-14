@@ -22,4 +22,4 @@ build.zip
 .dumi/tmp-production
 
 # build
-docs-dist
+/docs-dist
