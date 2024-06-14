@@ -2,8 +2,8 @@ import { defineConfig } from "dumi";
 
 export default defineConfig({
   outputPath: "docs-dist",
-  base: "rap-doc",
-  publicPath: "/rap-doc/",
+  base: "/",
+  publicPath: "/",
   exportStatic: {},
   extraBabelPlugins: [
     [

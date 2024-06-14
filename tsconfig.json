@@ -65,6 +65,7 @@
   ],
   "compileOnSave": false,
   "include": [
-    "src"
+    "src",
+    ".dumirc.ts"
   ]
 }
