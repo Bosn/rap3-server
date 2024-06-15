@@ -1,14 +1,19 @@
+---
+group: React
+order: 300
+---
+
 # @rapper3/react-query3
 
 `@rapper3/react-query3` based on [react-query@3](https://react-query-v3.tanstack.com/overview)
 
 ### 1. Click `Generate TS code`
 
-<img width="850px" src="../images/ts-generate.jpg">
+<img width="850px" src="./images/ts-generate.jpg">
 
 ### 2. Select `Rapper3.0` & `Basic Mode`
 
-<img width="850px" src="../images/normal-mode.jpg">
+<img width="850px" src="./images/normal-mode.jpg">
 
 ### 3. Then install `react-query@3` & `@rapper3/react-query3`
 

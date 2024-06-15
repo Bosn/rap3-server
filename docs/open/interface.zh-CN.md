@@ -1,10 +1,8 @@
-<!--
- * @Author: xia xian
- * @Date: 2022-06-06 17:26:30
- * @LastEditors: xia xian
- * @LastEditTime: 2022-11-23 17:10:09
- * @Description:
--->
+---
+group: Open API
+order: 400
+---
+
 # 查询接口定义详情
 
 ### API

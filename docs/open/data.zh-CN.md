@@ -1,10 +1,8 @@
-<!--
- * @Author: xia xian
- * @Date: 2022-06-06 17:26:30
- * @LastEditors: xia xian
- * @LastEditTime: 2022-11-23 17:10:27
- * @Description:
--->
+---
+group: Open API
+order: 500
+---
+
 # 查询指定格式的仓库数据
 
 ### API

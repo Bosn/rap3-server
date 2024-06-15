@@ -1,10 +1,8 @@
-<!--
- * @Author: xia xian
- * @Date: 2022-06-06 17:26:30
- * @LastEditors: xia xian
- * @LastEditTime: 2022-11-23 17:10:18
- * @Description:
--->
+---
+group: Open API
+order: 300
+---
+
 # 查询仓库的模块列表和接口列表
 
 ### API

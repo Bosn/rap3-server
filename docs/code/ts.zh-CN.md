@@ -1,4 +1,8 @@
-# Pure TS Models
+---
+group: 其它
+---
+
+# TypeScript
 
 This will only generate TS file
 

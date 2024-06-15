@@ -1,3 +1,8 @@
+---
+group: Open API
+order: 600
+---
+
 # 更新仓库接口信息
 
 ### API

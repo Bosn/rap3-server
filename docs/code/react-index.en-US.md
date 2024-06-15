@@ -1,16 +1,23 @@
+---
+group: 
+  title: React
+  order: 100
+order: 100
+---
+
 # React Hooks
 
 ## @rapper3/react-ahooks
 
-<code src="../demos/ReactHooks.tsx"></code>
+<code src="../code/demos/ReactHooks.tsx"></code>
 
 ### 1. Click `Generate TS code`
 
-<img width="850px" src="../images/ts-generate.jpg">
+<img width="850px" src="../code/images/ts-generate.jpg">
 
 ### 2. Select `Rapper3.0` & `React + ahooks mode`
 
-<img width="850px" src="../images/react-ahooks.jpg">
+<img width="850px" src="../code/images/react-ahooks.jpg">
 
 ## Movitation
 
@@ -41,8 +48,8 @@ If you are using React in your project，we recommend Rapper + Hooks mode
 
 > Here's a comparison
 
-<img width="500px" src="./../images/pure-fetch.jpg">
-<img width="650px" src="./../images/use-fetch.jpg">
+<img width="500px" src="./images/pure-fetch.jpg">
+<img width="650px" src="./images/use-fetch.jpg">
 
 ## Usage
 
@@ -59,6 +66,6 @@ function useFetch(
 - [IUseRequestOptions](https://ahooks.js.org/hooks/use-request/basic#options)
 - [IResult](https://ahooks.js.org/hooks/use-request/basic#result)
 
-<img width="700px" src="./../images/use-fetch-url.jpg">
+<img width="700px" src="./images/use-fetch-url.jpg">
 <br/>
-<img width="700px" src="./../images/use-fetch-res.jpg">
+<img width="700px" src="./images/use-fetch-res.jpg">

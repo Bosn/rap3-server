@@ -1,3 +1,7 @@
+---
+group: Others
+---
+
 # Nest DTO Generation
 
 This will generate Nest DTO file

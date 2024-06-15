@@ -1,10 +1,8 @@
-<!--
- * @Author: xia xian
- * @Date: 2022-06-06 17:26:30
- * @LastEditors: xia xian
- * @LastEditTime: 2022-11-23 17:10:22
- * @Description:
--->
+---
+group: Open API
+order: 300
+---
+
 # Search repository details
 
 ### API

@@ -1,16 +1,21 @@
+---
+group: React
+order: 400
+---
+
 # @rapper3/react-swr
 
 `@rapper3/react-swr` based on [SWR](https://swr.vercel.app/zh-CN)
 
-<code src="../demos/ReactSwr.tsx"></code>
+<code src="./demos/ReactSwr.tsx"></code>
 
 ### 1. Click `Generate TS code`
 
-<img width="850px" src="../images/ts-generate.jpg">
+<img width="850px" src="./images/ts-generate.jpg">
 
 ### 2. Select `Rapper3.0` & `Basic Mode`
 
-<img width="850px" src="../images/normal-mode.jpg">
+<img width="850px" src="./images/normal-mode.jpg">
 
 ### 3. Then install `swr` & `@rapper3/react-swr`
 
@@ -20,7 +25,7 @@ yarn add @rapper3/react-swr swr
 
 ## Usage
 
-<img width="700px" src="./../images/react-swr.jpg">
+<img width="700px" src="./images/react-swr.jpg">
 
 ```ts
 import { createSwr } from '@rapper3/react-swr'

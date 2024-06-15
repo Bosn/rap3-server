@@ -1,3 +1,8 @@
+---
+group: Open API
+order: 600
+---
+
 # Update repository interfaces data
 
 ### API

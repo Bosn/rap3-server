@@ -1,14 +1,19 @@
+---
+group: React
+order: 200
+---
+
 # @rapper3/react-query
 
 `@rapper3/react-query` based on [@tanstack/react-query](https://tanstack.com/query/v4/docs/adapters/react-query)
 
 ### 1. Click `Generate TS code`
 
-<img width="850px" src="../images/ts-generate.jpg">
+<img width="850px" src="./images/ts-generate.jpg">
 
 ### 2. Select `Rapper3.0` & `Basic Mode`
 
-<img width="850px" src="../images/normal-mode.jpg">
+<img width="850px" src="./images/normal-mode.jpg">
 
 ### 3. Then install `@tanstack/react-query` & `@rapper3/react-query`
 
@@ -66,16 +71,16 @@ export const op = createRapperQueryOptions(http)
 
 ### useRapperQuery
 
-<code src="../demos/reactQuery/ReactQuery.tsx"></code>
+<code src="./demos/reactQuery/ReactQuery.tsx"></code>
 
 ### useRapperQueries
 
-<code src="../demos/reactQuery/ReactQueries.tsx"></code>
+<code src="./demos/reactQuery/ReactQueries.tsx"></code>
 
 ### useRapperMutation
 
-<code src="../demos/reactQuery/useMutation.tsx"></code>
+<code src="./demos/reactQuery/useMutation.tsx"></code>
 
 ### useRapperInfiniteQuery
 
-<code src="../demos/reactQuery/useInfiniteQuery.tsx"></code>
+<code src="./demos/reactQuery/useInfiniteQuery.tsx"></code>

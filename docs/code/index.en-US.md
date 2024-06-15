@@ -1,24 +1,17 @@
 ---
 nav:
-  title: Generate Code
-  order: 1
-group:
-  group: Home
+  title: Gen Code
+  order: 3
+toc: content
 ---
 
----
-hero:
-  title: 代码生成
-  description: 使用Rapper生成TS类型声明和http请求代码
-  keywords: RAP, 代码生成, Rapper, TypeScript
----
+# Rapper
 
-Base on RAP platform，we provide some code generation modes to help to make
-http request in your project.
+Base on RAP platform，we provide some code generation modes to help to make http request in your project.
 
 - [Pure TS](./code/ts): generate TS defination file purely
 - [http](./code/http): generate TS defination and http request(base on [axios](https://github.com/axios/axios))
-- [React hooks](./code/react): generate http and `useFetch`(based on [ahooks useRequest](https://ahooks.js.org/hooks/use-request/index))
+- [React hooks](./code/react): generate TypeScript typed `useFetch`(based on [ahooks useRequest](https://ahooks.js.org/hooks/use-request/index))
 
 Except the above generationg modes, we also provide the following packages
 
@@ -30,6 +23,3 @@ Except the above generationg modes, we also provide the following packages
 - [@rapper3/vue-query]('./code/vue/vue-query')
 - [@rapper3/vue-swr](./code/vue/vue-swr)
 
-## Contact
-
-Any question，Plz contact: `xian.xia@shopee.com` `taofeng.yang@shopee.com`

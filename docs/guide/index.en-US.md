@@ -1,6 +1,7 @@
 ---
 nav:
   title: Guide
+  order: 1
 toc: content
 order: 100
 ---
