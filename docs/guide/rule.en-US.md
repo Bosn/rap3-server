@@ -1,4 +1,9 @@
-# Path Rule
+---
+group: Mock
+order: 300
+---
+
+# Rules
 
 - Mock server rule: RAP platform URL + mock + repository id + method + interface actual request path
 

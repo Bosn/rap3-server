@@ -1,4 +1,10 @@
+---
+group: 接口
+order: 300
+---
+
 # 接口校验
+
 我们提供了接口校验工具来校验真实接口的返回是否与文档定义相符合，可以理解为简化版本的postman工具
 
 1. 对于【后端开发者】，在本地开发时，可以通过【接口校验】功能，发现请求参数是否处理正确、返回结果是否规范，以及BUG调试。
@@ -6,7 +12,7 @@
 
 在接口编辑页面, 找到 `验证` 图标即可开始使用接口校验功能
 
-<code src="./component/entrance_zh.tsx" inline=true></code>
+<code src="./interface/component/entrance_zh.tsx" inline=true></code>
 
 ## 基本设置
 
@@ -16,7 +22,7 @@
     1. 默认设置
     - 【接口服务配置】为仓库级作用域，会根据上次的配置自动填写，如果本仓库未设置过，则会根据接口文档数据自动填写Mock服务的地址。
     - 点击【编辑】图标，可进行编辑。
-    <code src="./component/server_setting_zh.tsx" inline=true></code>
+    <code src="./interface/component/server_setting_zh.tsx" inline=true></code>
     1. 编辑配置
     * 【域名/IP】目标接口的IP或者域名。
     * 【端口】目标接口的端口，如果未填写，则使用协议的默认端口。
@@ -27,29 +33,29 @@
 
     2. 点击【确认】图标，可进行保存。
 
-    <code src="./component/basic_settings_zh.tsx" inline=true></code>
+    <code src="./interface/component/basic_settings_zh.tsx" inline=true></code>
 
 * 编辑【全局头信息配置】
     1. 默认设置
     【全局头信息配置】为仓库级作用域，会根据上次的配置自动填写，如果本仓库未设置过，则为空。
 点击【编辑】图标，可进行编辑。
-    <code src="./component/global_header_setting_zh.tsx" inline=true></code>
+    <code src="./interface/component/global_header_setting_zh.tsx" inline=true></code>
 
     2. 编辑配置
     点击【+】添加一条头信息的配置，请确保【名称】不为空，否则在失去焦点时，会将删除此字段。
 点击【确认】图标，可进行保存。
-    <code src="./component/edit_global_header_zh.tsx" inline=true></code>
+    <code src="./interface/component/edit_global_header_zh.tsx" inline=true></code>
 
 ## 目标结果
 【目标结果】是为了方便与接口响应结果进行对比，比如：是否存在未定义字段、是否确实必填字段、字段类型是否正确、字段值是否为指定的字面值等。当然，系统已根据接口文档的定义自动生成默认值和默认的校验规则。用户可以基于默认值进行编辑和修正。
 1. 默认设置
     目标结果】为接口级作用域，会根据上次的配置自动填写，如果未设置过，则根据接口文档定义生成默认值并填写。
     点击【编辑】图标，可进行编辑。
-    <code src="./component/target_result_zh.tsx" inline=true></code>
+    <code src="./interface/component/target_result_zh.tsx" inline=true></code>
 2. 编辑配置
     在JSON编辑器区域进行修改，如果字段与其定义不相符，则会提示相应的错误。
 如果JSON编辑存在错误提示，则无法进行保存，如果此时切换tab，则会抛弃此次编辑内容。
-    <code src="./component/edit_target_result_zh.tsx" inline=true></code>
+    <code src="./interface/component/edit_target_result_zh.tsx" inline=true></code>
 
 ## 接口请求
 
@@ -61,26 +67,26 @@
 1. 编辑请求参数
    * 系统会根据接口定义中的请求参数（Headers参数、Query参数、Body参数）展示对应模块并生成默认值。
 根据需要，修改请求参数内容（增删字段、修改字段类型和值等）。
-    <code src="./component/query_zh.tsx" inline=true></code>
+    <code src="./interface/component/query_zh.tsx" inline=true></code>
 
 1. 调用接口
     * 配置请求方式
      系统会根据接口文档初始化接口地址信息和Body编码方式，一般不建议修改，防止导致与接口文档定义不一致。如果为了试探接口的真实实现方式，可以通过修改进行尝试。
     * 点击【调用】按钮进行目标接口请求。
-    <code src="./component/post_request_zh.tsx" inline=true></code>
+    <code src="./interface/component/post_request_zh.tsx" inline=true></code>
 
     1. 调用接口
     如果接口请求失败（服务地址配置错误、服务4xx或者5xx）会提示错误信息。
 提示信息展示6秒后自动关闭，如果鼠标停留在提示信息上，将不自动关闭。
-    <code src="./component/post_request_failed_zh.tsx" inline=true></code>
+    <code src="./interface/component/post_request_failed_zh.tsx" inline=true></code>
 
 2. 验证目标结果
    * 校验接口结果 如果目标接口请求成功，响应结果将展示在JSON编辑区，并与接口定义的【响应内容】规则进行校验。如果校验失败，进行对应的提示。
    检验结果提示分两个级别，如果存在接口文档未定义的字段（多字段），则是WARNING级别；其他（缺少必填字段、字段类型错误等）则为ERROR级别。
    * 成功
 
-    <code src="./component/result_validate_success_zh.tsx" inline=true></code>
+    <code src="./interface/component/result_validate_success_zh.tsx" inline=true></code>
    * 失败
 
 
-    <code src="./component/result_validate_fail_zh.tsx" inline=true></code>
+    <code src="./interface/component/result_validate_fail_zh.tsx" inline=true></code>

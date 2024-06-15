@@ -1,3 +1,10 @@
+---
+toc: content
+group:
+  title: FAQ
+  order: 700
+---
+
 # FAQ
 
 ### Where is the rap repo?

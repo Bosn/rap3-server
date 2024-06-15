@@ -5,6 +5,8 @@ hero:
   actions:
     - text: Getting Started
       link: /guide
+    - text: GitHub
+      link: https://github.com/bosn/rap3-server
 features:
   - emoji: 🎨
     title: GUI

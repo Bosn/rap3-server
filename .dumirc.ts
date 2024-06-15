@@ -5,6 +5,15 @@ export default defineConfig({
   base: "/",
   publicPath: "/",
   exportStatic: {},
+  headScripts: [`
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fb5d240c17f2d907f8b5184843370757";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  `],
   extraBabelPlugins: [
     [
       "babel-plugin-import",
@@ -38,6 +47,9 @@ export default defineConfig({
           link: "https://www.bilibili.com/video/BV1s3411H7fr/",
         },
       ],
+    },
+    socialLinks: {
+      github: "https://github.com/bosn/rap3-server",
     },
   },
   locales: [

@@ -1,4 +1,17 @@
-# Generate Code Rapper v3
+---
+nav:
+  title: Generate Code
+  order: 1
+group:
+  group: Home
+---
+
+---
+hero:
+  title: 代码生成
+  description: 使用Rapper生成TS类型声明和http请求代码
+  keywords: RAP, 代码生成, Rapper, TypeScript
+---
 
 Base on RAP platform，we provide some code generation modes to help to make
 http request in your project.

@@ -1,4 +1,9 @@
-# Mock路径规则
+---
+group: 模拟数据
+order: 300
+---
+
+# 规则设置
 
 - Mock server url拼接规则: RAP平台URL + mock + 仓库id + 方法 + 接口实际路径
 

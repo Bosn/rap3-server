@@ -1,5 +1,11 @@
-# FAQ
+---
+toc: content
+group:
+  title: FAQ
+  order: 700
+---
 
+# FAQ
 ### RAP的仓库地址是?
 
 Github:
