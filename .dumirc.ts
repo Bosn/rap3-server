@@ -26,7 +26,7 @@ export default defineConfig({
   ],
   themeConfig: {
     name: "RAP",
-    logo: "http://rap2.taobao.org/favicon.png",
+    logo: "/favicon.png",
     navs: {
       "zh-CN": [
         { title: "指南", link: "/zh-CN/guide" },
