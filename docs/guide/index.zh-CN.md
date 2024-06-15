@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 入门
+  title: 指南
 toc: content
 order: 100
 ---
