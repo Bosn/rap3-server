@@ -120,9 +120,9 @@ export default class MailService {
                     <td width="22">&nbsp;</td>
                     <td align="center"
                       style="color:#ffffff; font-size:11px; line-height:14px; padding-top:20px;text-align:center;">
-                      <strong><a href="http://rap2.alibaba-inc.com/"
+                      <strong><a href="https://rapapi.cn/"
                       style="color:#ffffff; font-weight:bold; text-decoration:none;">RAP2</a> | <a
-                          href="https://github.com/thx/rap2-delos"
+                          href="https://github.com/bosn/rap3-server"
                           style="color:#ffffff; font-weight:bold; text-decoration:none;">GitHub</a></strong>
                     </td>
                     <td width="22">&nbsp;</td>
@@ -216,7 +216,7 @@ export default class MailService {
                     style="color:#555555; font-size:15px; line-height:20px; padding-top:30px; padding-bottom:30px;">
                     <strong>为什么我会收到这封邮件？</strong>您在RAP2系统使用了密码找回功能，我们发送这封邮件，以协助您重设密码。
                     <br><br>如果您没有使用此功能，请忽略此邮件
-                    <br><br>如果您不想收到我们的邮件<a href="http://rap2.taobao.org/account/unsubscribe" style="color:#1473E6; font-weight:bold; text-decoration:none;">点击退订</a>
+                    <br><br>如果您不想收到我们的邮件<a href="https://rapapi.cn/account/unsubscribe" style="color:#1473E6; font-weight:bold; text-decoration:none;">点击退订</a>
                     </td>
                   <td class="mobile-spacer" width="30" style="width:30px;">&nbsp;</td>
                 </tr>
@@ -231,9 +231,9 @@ export default class MailService {
                   <td width="22">&nbsp;</td>
                   <td align="center"
                     style="color:#ffffff; font-size:11px; line-height:14px; padding-top:20px;text-align:center;">
-                    <strong><a href="http://rap2.taobao.org/"
+                    <strong><a href="https://rapapi.cn/"
                         style="color:#ffffff; font-weight:bold; text-decoration:none;">RAP2</a> | <a
-                        href="https://github.com/thx/rap2-delos"
+                        href="https://github.com/bosn/rap3-server"
                         style="color:#ffffff; font-weight:bold; text-decoration:none;">GitHub</a></strong>
                   </td>
                   <td width="22">&nbsp;</td>
