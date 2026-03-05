@@ -4,7 +4,7 @@ import openRouter from './openRouter'
 import SceneOpenService, { SceneOpenServiceType } from '../../service/openAPI/scene'
 
 import { OPEN_API_STATUS_CODE } from './constant'
-
+import Scene from '../../models/bo/scene'
 
 const SCENE_LIST_CHECK_SCHEMA = Yup.object({
   interfaceId: Yup.number().integer().positive(),
@@ -170,12 +170,12 @@ openRouter.post('/scene/create', async (ctx) => {
     const created = await SceneOpenService.create(params)
     if (created === false) {
       code = OPEN_API_STATUS_CODE.NO_ACCESS
-      message = `access denied: access token doesn't match the repository for interface {${params.interfaceId}}`
+      message = 'access denied'
     } else if (!created) {
       code = OPEN_API_STATUS_CODE.NO_DATA
-      message = `no interface: ${params.interfaceId}`
+      message = 'no data'
     } else {
-      result = { id: created.id }
+      result = await Scene.findByPk(created.id)
     }
   } catch (e) {
     code = OPEN_API_STATUS_CODE.SEVER_ERROR

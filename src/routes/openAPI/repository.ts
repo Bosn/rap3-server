@@ -32,7 +32,6 @@ const REPO_LIST_CHECK_SCHEMA = Yup.object({
   orderBy: Yup.string().matches(/^(DESC|ASC)$/, { excludeEmptyString: true }),
 })
 openRouter.get('/repository/list', async (ctx) => {
-
   // 1.提取并校验参数
   let params: RepositoryOpenServiceType.ListParams = null
   try {
